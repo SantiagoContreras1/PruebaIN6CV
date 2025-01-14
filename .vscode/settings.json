@@ -1,0 +1,11 @@
+{
+    "workbench.statusBar.visible": true,
+    "react-native.packager.status-indicator": "Short",
+    "errorLens.statusBarIconsEnabled": false,
+    "errorLens.statusBarIconsUseBackground": true,
+    "CodeGPT.apiKey": "OpenAI",
+    "zenMode.hideStatusBar": true,
+    "debug.enableStatusBarColor": true,
+    "notebook.showCellStatusBar": "visible",
+    "errorLens.statusBarIconsAtZero": "removeBackground"
+}
