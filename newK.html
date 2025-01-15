@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fundación Kinal</title>
 
-    <meta name="theme-color" context="#0s3dsa"> <!-- Color de barra de pagina-->
-    <link rel="icon" type="image/png" href="images/pointing-up.png"> <!-- Icono de pagina -->
-    <link rel="stylesheet" href="style/newK.css">
+    <meta name="theme-color" context="#0s3dsa" />
+    <!-- Color de barra de pagina-->
+    <link rel="icon" type="image/png" href="images/pointing-up.png" />
+    <!-- Icono de pagina -->
+    <link rel="stylesheet" href="style/newK.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
         <a class="navbar-brand" href="newK.html">Fundación Kinal (Beta)</a>
@@ -50,8 +59,320 @@
       </div>
     </nav>
 
+    <!-- Navbar 2 -->
+    <div class="nav">
+      <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <img
+          src="https://static.wixstatic.com/media/128120_cfcd43999075474d8400eb39987892ca~mv2.png/v1/fill/w_214,h_78,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/FUNDACI%C3%83%C2%93N_KINAL_VECTOR--0101.png"
+          alt="Piensalo dos veces antes de inscribirte"
+        />
+        <!-- Links navbar a la pag -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">Quiénes Somos</a>
+          <a href="#team" class="w3-bar-item w3-button"
+            ><i class="fa fa-user"></i> Educación</a
+          >
+          <a href="#work" class="w3-bar-item w3-button"
+            ><i class="fa fa-th"></i> Trabajos</a
+          >
+          <a href="#contact" class="w3-bar-item w3-button"
+            ><i class="fa fa-envelope"></i> Contáctanos</a
+          >
+        </div>
 
-    
+        <!-- Esconde los iconos en un boton de menu, para pantallas pequeñas -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Nav FIN -->
+
+    <!-- Sidebar a sitios de la página para el nav -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close ×</a
+      >
+      <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Quiénes Somos</a
+      >
+      <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Educación</a
+      >
+      <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Trabajos</a
+      >
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Contáctanos</a
+      >
+    </nav>
+
+    <!-- Header, imagen del compa -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-left w3-text-white" style="padding: 48px">
+        <span class="w3-jumbo w3-hide-small">Fundación Kinal</span><br />
+        <span class="w3-large">¡TU CAMINO AL ÉXITO ESTÁ EN KINAL!</span>
+        <p>
+          <a
+            href="#about"
+            class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off"
+            >CONOCE MÁS</a
+          >
+        </p>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="w3-container" style="padding: 128px 16px" id="about">
+      <div class="d-flex justify-content-center">
+        <img
+          src="https://static.wixstatic.com/media/128120_ee5ccdee60e04a118d1e3759431825ed~mv2.png/v1/fill/w_293,h_310,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/128120_ee5ccdee60e04a118d1e3759431825ed~mv2.png"
+          alt="EL TRABAJO BIEN HECHO"
+        />
+      </div>
+
+      <div class="w3-row-padding w3-center" style="margin-top: 64px">
+        <div class="w3-quarter">
+          <img
+            class="aboutImg"
+            src="https://cdn-icons-png.flaticon.com/512/3079/3079279.png"
+          />
+          <p class="w3-large">Preparación</p>
+          <p>
+            Kinal te prepara con conocimientos modernos, últimas tecnologias.
+            ¡Saldrás al mundo laboral más demandado!
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            class="aboutImg"
+            src="https://static-00.iconduck.com/assets.00/flexed-biceps-emoji-508x512-y1wgoo70.png"
+          />
+          <p class="w3-large">Pasión</p>
+          <p>
+            Los educandos en Kinal, están fuertemente preparados para educar y
+            apasionados por transmitirte su conocimiento.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img class="aboutImg2" src="images/aboutIcon.png" />
+          <p class="w3-large">Diciplina</p>
+          <p>
+            En Kinal, es un compromiso fomentar la diciplina en cada alumno que
+            ingresa. Día a día, nos preocupamos por fomentar este valor.
+          </p>
+        </div>
+        <div class="w3-quarter">
+          <img
+            class="aboutImg2"
+            src="https://cdn-icons-png.flaticon.com/512/4515/4515017.png"
+          />
+          <p class="w3-large">Productividad</p>
+          <p>
+            Kinal procura aprovechar al máximo el tiempo. Por eso, nos
+            preocupamos por evitar los tiempos muertos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección de Educación -->
+
+    <div class="w3-container backgroundLine" style="padding: 128px 20px">
+      <div class="w3-row-padding">
+        <div class="w3-col m6"></div>
+        <div class="w3-container" style="padding: 128px 16px" id="team">
+          <h3 class="w3-center backgroundLineFont">EDUCACIÓN</h3>
+          <div
+            class="w3-row-padding w3-grayscale backgroundLine2"
+            style="margin-top: 64px"
+          >
+            <div class="w3-col l3 m6 w3-margin-bottom">
+              <div class="w3-card">
+                <img
+                  src="https://static.wixstatic.com/media/128120_e70270b3fe48460d91faa702eb0e3619~mv2.jpg/v1/fill/w_540,h_564,al_c,lg_1,q_80,enc_avif,quality_auto/individualMesa%20de%20trabajo%202.jpg"
+                  alt="Ciclo Básico"
+                  style="width: 100%"
+                />
+                <div class="w3-container">
+                  <p>
+                    Kinal ofrece su programa de Educación General Básica para
+                    todos aquellos jóvenes que buscan una orientación técnica y
+                    excelencia académica.
+                  </p>
+                  <p>
+                    <button class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+              <div class="w3-card">
+                <img
+                  src="https://static.wixstatic.com/media/128120_f7e5ea02ac774e6fba7863af89dd605d~mv2.jpg/v1/fill/w_540,h_564,al_c,lg_1,q_80,enc_avif,quality_auto/ruta02.jpg"
+                  alt="Nivel Diversificado"
+                  style="width: 100%"
+                />
+                <div class="w3-container">
+                  <p>
+                    Durante 3 años se prepara al joven de forma técnica y
+                    académica, el egresado estará listo trabajar en el ramo
+                    técnico de la especialidad que eligió estudiar; el título
+                    obtenido le permitirá ingresar a la universidad.
+                  </p>
+                  <p>
+                    <button class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+              <div class="w3-card">
+                <img
+                  src="https://static.wixstatic.com/media/128120_3235e56086f844b48fffcc2d7b117fa2~mv2.jpg/v1/fill/w_540,h_564,al_c,lg_1,q_80,enc_avif,quality_auto/ruta03.jpg"
+                  alt="Escuela Superior"
+                  style="width: 100%"
+                />
+                <div class="w3-container">
+                  <p>
+                    Contamos con más de 30 especialidades técnicas y
+                    tecnológicas que pueden favorecer tu crecimiento y/o tu
+                    inserción laboral.
+                  </p>
+                  <p>
+                    <button class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-col l3 m6 w3-margin-bottom">
+              <div class="w3-card">
+                <img
+                  src="https://static.wixstatic.com/media/128120_f64d9e1f7bbc4e74bd1b66317a121b4b~mv2.jpg/v1/fill/w_540,h_619,al_c,lg_1,q_80,enc_avif,quality_auto/ruta04.jpg"
+                  alt="Técnico Universitario"
+                  style="width: 100%"
+                />
+                <div class="w3-container">
+                  <p>
+                    Dirigido al fortalecimiento de mandos medios y especialmente
+                    aquellos que han cursado una carrera técnica y desean
+                    continuar con estudios a nivel universitario. Estos estudios
+                    son avalados por la Universidad del Istmo.
+                  </p>
+                  <p>
+                    <button class="w3-button w3-light-grey w3-block">
+                      <i class="fa fa-envelope"></i> Contact
+                    </button>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgimg-2 w3-display-container w3-grayscale-min">
+      <div class="w3-display-left w3-text-white" style="padding: 48px"></div>
+    </div>
+
+    <!-- Alumnos Beneficiados -->
+    <div class="w3-container w3-row w3-center w3Yellow w3-padding-64">
+      <h3 class="w3-center backgroundLineFont">ALUMNOS BENEFICIADOS</h3>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">25k</span>
+        <br />ESCUELA TÉCNICA
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">1500+</span>
+        <br />CICLO BÁSICO
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">+6k</span>
+        <br />DIVERSIFICADO
+      </div>
+      <div class="w3-quarter">
+        <span class="w3-xxlarge">+32k</span>
+        <br />TOTAL
+      </div>
+    </div>
+
+    <!-- Trabajos -->
+    <div class="w3-container worksColor" style="padding: 128px 16px" id="work">
+      <h3 class="w3-center backgroundLineFont">TRABAJOS</h3>
+
+
+      <div class="justify-content-around">
+
+        
+      <div class="card">
+        <div class="image"></div>
+        <div class="content">
+          <a href="#">
+            <span class="title">
+              AJ INGENIEROS DE GUATEMALA S.A.
+            </span>
+          </a>
+
+          <p class="desc">
+            Desea contratar antiguo alumno de Kinal para ocupar plaza de:
+            <b>Dibujante Proyectista Estructural y de Construcción</b>
+          </p>
+
+          <a class="action" href="#">
+            Aplicar
+            <span aria-hidden="true"> → </span>
+          </a>
+        </div>
+      </div>
+
+
+
+      <div class="card">
+        <div class="image"></div>
+        <div class="content">
+          <a href="#">
+            <span class="title">
+              AJ INGENIEROS DE GUATEMALA S.A.
+            </span>
+          </a>
+
+          <p class="desc">
+            Desea contratar antiguo alumno de Kinal para ocupar plaza de:
+            <b>Dibujante Proyectista Estructural y de Construcción</b>
+          </p>
+
+          <a class="action" href="#">
+            Aplicar
+            <span aria-hidden="true"> → </span>
+          </a>
+        </div>
+      </div>
+
+
+      </div>
+
+
+
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
