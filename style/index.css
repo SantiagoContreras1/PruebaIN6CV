@@ -8,7 +8,7 @@
 }
 
 .background {
-  background-color: rgb(2, 66, 130);
+  background: linear-gradient(to left, rgb(2, 66, 130),rgb(62, 62, 62));
 }
 
 .title{
